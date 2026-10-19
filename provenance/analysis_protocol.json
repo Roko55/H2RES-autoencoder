@@ -1,0 +1,31 @@
+{
+  "purpose": "Clarify historical-baseline definitions and add the exact pre-existing production default, without selecting from reporting results.",
+  "already_available_findings": "The stored first15-member ensemble and frozen CVAE paths have been described; new refits are still running. No new hyperparameter, checkpoint or favourable seed is chosen from these outcomes.",
+  "additional_current_default_case": {
+    "training_seed": 42,
+    "device": "cuda",
+    "CPU_threads": 1,
+    "reason": "The current production source and stored models explicitly use random_state42 and CUDA. Measure that pre-existing configuration as well as the planned17/29/43 CPU refits. This also gives a measured same-P2000 comparison with the frozen CVAE costs.",
+    "checkpoint_selection": "Existing default early stopping on validation, full residual/drift calibration; no tuning.",
+    "selection_role": "Always report this predetermined current-default case, whether better or worse. Do not replace the validation-frozen CVAE recommendation."
+  },
+  "original_H2RES_baselines": {
+    "as_used_in_original_published_benchmark": "All original WTON capacity weights, including offshore; PHOT solar; training-only temperature climatology proxy.",
+    "onshore_sensitivity": "Also show the onshore-only original reference because the climate wind source differs spatially. Retain both cases; do not silently replace the published reference.",
+    "hour_scope": "Use every non-leap hour of2020-2024 (43800). Old tables excluded the first168hours and sometimes used100-member means, so preserve their numbers separately rather than calling the new table identical."
+  },
+  "stored_ensemble_identifiers": "Three groups of five existing members are bookkeeping groups, not newly generated RNG seeds. Their original seed/code version cannot be certified from the array alone.",
+  "primary_comparison_views": [
+    "individual generated trajectories",
+    "equal15-member central profiles",
+    "annual-mean spread",
+    "model-preparation versus inference costs"
+  ],
+  "no_reporting_based_model_tuning": true,
+  "operational_guard_repair": "The first default GPU case deferred before fitting because our active CPU-only XGBoost child registered a GPU context. In this new comparison folder only, classify an active queue-owned CPU hybrid child by exact PID, cwd, script and CPU device; unrelated Python/CUDA processes still defer our GPU work. Retry the same fixed seed42/configuration in a new directory, retaining the deferred attempt. No outcome-based tuning.",
+  "completed_original_consumer_case": {
+    "run": "study_laptop_compact_local_balanced_seed17_900s",
+    "role": "Already prespecified and frozen in the overnight study, not a new fitted model or a new selected seed. Include its archived reporting paths as a strong actualCPU900 comparator; the selected GPU architecture is not automatically the best CPU design.",
+    "recommendation_unchanged": true
+  }
+}

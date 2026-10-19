@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "split": "test",
+  "test_evaluated": true,
+  "variant": "compact_local_hires_prior_matching",
+  "training_seed": 17,
+  "checkpoint_sha256": "b1c8762b1ab34b1e139b6277a2dc1df766d8fc6219556178d4b1544ba38582d2",
+  "years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "metric_rows": 135,
+  "selection_score_T1": 0.19504503375228757,
+  "posterior": {
+    "mu_RMS": 0.5115835666656494,
+    "logvar_min": -3.6479063034057617,
+    "logvar_max": 0.0007547119748778641,
+    "fraction_logvar_outside_sampling_clamp": 0.0
+  },
+  "mean_pointwise_diversity_std": {
+    "solar": 0.022067636860276553,
+    "wind": 0.08918189646960244,
+    "temperature": 2.10693836540536
+  },
+  "diversity_fraction_training_std": {
+    "solar": 0.15012657342826974,
+    "wind": 0.6881762966032444,
+    "temperature": 0.22564517722144514
+  },
+  "prior_non_degenerate": true,
+  "metric_implementation_sha256": "bc5fc86fe0286c18b0c59f46b4db3db04541dee8a27a29eb356791d438b5bba6",
+  "evaluator_sha256": "a2edcb37b2c1890c2ff04428a84e3ecf522940eed115097fdb706ca01a045cb3",
+  "protocol_sha256": "48d9bfb04a5ad5fad00cb1d278e9aad325b3d9ada2a9b616dd04e6d2ce9df792",
+  "units": "Original source units; inverse log1p for wind; no m/s assumption",
+  "reference_clipping": "Raw unclipped reference; model training/conditioning follows legacy scaling"
+}

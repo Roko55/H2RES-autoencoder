@@ -1,0 +1,4 @@
+model,paths,load_seconds,warmup_seconds,generate_15_years_seconds,seconds_per_year,peak_RAM_MiB,host,device
+hybrid_CPU17,15,2.87326339998981,13.314379600051325,52.631410099973436,3.5087606733315626,288.4453125,faculty workstation,CPU 1 thread
+hybrid_default_CPU_prediction,15,2.848402200033888,13.092158999992535,52.28452849993482,3.485635233328988,287.66796875,faculty workstation,CPU 1 thread
+selected_CVAE,15,5.383742699981667,0.22052249999251217,2.3858761000446975,0.1590584066696465,338.73046875,faculty workstation,CPU 1 thread

@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "split": "validation",
+  "test_evaluated": false,
+  "variant": "legacy_original",
+  "training_seed": 17,
+  "checkpoint_sha256": "708be2e071df85769b9d462862b0980869ef713ef743e4c95ae10abf52bdcc9d",
+  "years": [
+    2016,
+    2017,
+    2018,
+    2019
+  ],
+  "metric_rows": 144,
+  "selection_score_T1": 0.5191815474523904,
+  "posterior": {
+    "mu_RMS": 2.4748501777648926,
+    "logvar_min": -2.133790969848633,
+    "logvar_max": -0.4830639362335205,
+    "fraction_logvar_outside_sampling_clamp": 0.0
+  },
+  "mean_pointwise_diversity_std": {
+    "solar": 0.0022610230829357,
+    "wind": 0.0099016740862053,
+    "temperature": 0.12261109281527838
+  },
+  "diversity_fraction_training_std": {
+    "solar": 0.01538178510152923,
+    "wind": 0.07640673356996458,
+    "temperature": 0.013131187044617553
+  },
+  "prior_non_degenerate": true,
+  "metric_implementation_sha256": "bc5fc86fe0286c18b0c59f46b4db3db04541dee8a27a29eb356791d438b5bba6",
+  "evaluator_sha256": "a2edcb37b2c1890c2ff04428a84e3ecf522940eed115097fdb706ca01a045cb3",
+  "protocol_sha256": "48d9bfb04a5ad5fad00cb1d278e9aad325b3d9ada2a9b616dd04e6d2ce9df792",
+  "units": "Original source units; inverse log1p for wind; no m/s assumption",
+  "reference_clipping": "Raw unclipped reference; model training/conditioning follows legacy scaling",
+  "aggregate_prior_score_T1": 0.34518244438026724,
+  "aggregate_diversity_fraction_training_std": {
+    "solar": 0.0016308319433724666,
+    "wind": 0.006443033666095072,
+    "temperature": 0.001250297781885202
+  },
+  "aggregate_prior_non_degenerate": false
+}

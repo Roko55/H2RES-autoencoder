@@ -1,0 +1,92 @@
+{
+  "version": "2026-10-19.2",
+  "purpose": "Matched national-profile evaluation of the validation-selected CVAE, current XGBoost/seasonal block-bootstrap generator, original H2RES fixed-input baseline, and separately retained original CVAE reference.",
+  "data_sha256": "d92748ca6625d0092b073b9bc16345da960a04c42da29926da5b125a63ad122d",
+  "train_years": [
+    1980,
+    2015
+  ],
+  "validation_years": [
+    2016,
+    2019
+  ],
+  "reporting_years": [
+    2020,
+    2024
+  ],
+  "channels": [
+    "solar",
+    "wind",
+    "temperature"
+  ],
+  "hours_per_year": 8760,
+  "leap_days_removed": true,
+  "hybrid_training_seeds": [
+    17,
+    29,
+    43
+  ],
+  "sampling_seeds": [
+    101,
+    102,
+    103
+  ],
+  "paths_per_sampling_seed": 5,
+  "primary_hybrid_checkpoint_seed": 17,
+  "primary_ae_checkpoint": "study_confirmation_compact_local_hires_prior_matching_seed17_3600s",
+  "primary_ae_checkpoint_sha256": "b1c8762b1ab34b1e139b6277a2dc1df766d8fc6219556178d4b1544ba38582d2",
+  "primary_ae_selection": "Existing validation-only recommendation; never reselect using this benchmark.",
+  "hybrid_configuration": "Exact current source and default fitting/calibration/generation functions; CPU n_jobs=1 and explicitly recorded random_state are the only estimator parameter overrides. Full drift calibration, no fast calibration, no hyperparameter tuning.",
+  "consumer_cpu_training_measurement": {
+    "threads": 1,
+    "minimum_free_RAM_GiB": 1.25,
+    "selected_ae_training_seconds": 900,
+    "selected_ae_training_seed": 17,
+    "use_for_reselection": false,
+    "status": "Deferred: both local attempts stopped before completing fitting to preserve other laptop work"
+  },
+  "primary_quality_metrics": [
+    "individual_path_Wasserstein",
+    "p99_absolute_error",
+    "SD_ratio",
+    "ACF_absolute_error_lags_1_24_168",
+    "ramps",
+    "low_and_high_wind_episode_durations",
+    "annual_mean_spread",
+    "existing_composite_score"
+  ],
+  "secondary_quality_metrics": [
+    "individual_path_calendar_paired_MAE_RMSE_bias",
+    "central_profile_MAE_RMSE_bias",
+    "KS",
+    "monthly_mean_error",
+    "cross_channel_correlations"
+  ],
+  "central_profile_rule": "Average the same 15 generated paths for each trained generator, then repeat that central calendar profile over each reporting year. Never substitute these metrics for individual-trajectory quality.",
+  "historical_baseline": "Capacity-weighted solar/onshore-wind profiles from the original shared H2RES files, repeated annually. Original H2RES has no trained ambient-temperature generator; training-only hourly temperature climatology is an explicit proxy.",
+  "resource_reporting": "Record wall time and sampled process RSS/Windows peak working set for fit, full calibration, generation and whole process. Compare fixed-architecture AE 900-second CPU run and hybrid fitting on the same laptop; existing faculty GPU-reference/selected checkpoint costs remain separate hardware rows. No solver time is included.",
+  "limitations": [
+    "The reporting period and previous CVAE results have already been seen. This is a new frozen comparison, not a new pristine test set.",
+    "No new model or hyperparameter choice is selected from reporting outcomes.",
+    "The selected CVAE is best among previously tested eligible configurations under the stated budget, not a globally proven optimal autoencoder.",
+    "The hybrid deliberately models channels independently; cross-channel results are diagnostics, not a claim of coherent joint weather probabilities.",
+    "Historical H2RES assets and the national climate source have different spatial/source construction, so the baseline comparison includes input-representation effects.",
+    "No Gurobi run, original production overwrite, external publication or message is authorized by this comparison.",
+    "Resource limits are a hypothesis to assess, not a required conclusion. Failure of a generator or superiority of the hybrid is not assumed."
+  ],
+  "resource_revision": "The initial seed17 attempt was stopped by the 2 GiB reserve before completing fitting, with about281MiB measured child memory. Before any new model outcomes, use a1.25GiB free-memory reserve for this shared laptop, CPU1/BelowNormal unchanged. Preserve the stopped attempt. This operational change does not alter models or metric selection. A second attempt hit the1.25GiB guard. No reserve is lowered again. New measurements move to the faculty workstation, retaining128GiB free memory, CPU1/BelowNormal and shared-GPU guards; no other processes are stopped. This resource-only revision precedes any completed new fit.",
+  "matched_resource_measurement": {
+    "host": "faculty workstation used for the original CVAE study",
+    "CPU_threads": 1,
+    "minimum_free_RAM_GiB": 128,
+    "hybrid_CPU_seeds": [
+      17,
+      29,
+      43
+    ],
+    "optional_hybrid_GPU_seed": 17,
+    "selected_ae_CPU_seconds": 900,
+    "selected_ae_CPU_seed": 17,
+    "quality_reselection": false
+  }
+}

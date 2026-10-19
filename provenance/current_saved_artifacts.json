@@ -1,0 +1,19 @@
+{
+  "selection": "Fixed first15 members before examining their metrics, no outcome-based choice",
+  "training_pool_and_hourly_mean_match_1980_2015": true,
+  "generation_code_version_not_certified_from_old_artifact_alone": true,
+  "files": {
+    "H2RES_SingleZone_Myopic_v1.2\\data\\SC\\xgb_synthetic_scenarios.npy": {
+      "sha256": "acbf2c5bf521ceb4872ed075a5d1167ad872869e8445d395194885cba62d352f",
+      "bytes": 10512128
+    },
+    "H2RES_SingleZone_Myopic_v1.2\\models\\xgb_models.joblib": {
+      "sha256": "18b1ce8868b989b8a47f0ed8e0382821532351d5d135653bdc0f183a498851de",
+      "bytes": 26278141
+    },
+    "H2RES_SingleZone_Myopic_v1.2\\models\\xgb_norm_params.npz": {
+      "sha256": "3d7a04b60020c1b18ce59db3f00f07bf801746f69e318ff2b35faea335af2009",
+      "bytes": 2946326
+    }
+  }
+}

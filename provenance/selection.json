@@ -1,0 +1,333 @@
+{
+  "selected_variant": "compact_local_hires_prior_matching",
+  "validation_scores": {
+    "compact_local_balanced": 0.17473063516503315,
+    "compact_local_prior_matching": 0.15618377362484132,
+    "compact_local_hires_prior_matching": 0.15002911672648403
+  },
+  "selection_utc": "2026-10-19T02:29:58.350161+00:00",
+  "test_used_for_selection": false,
+  "fallback_if_no_complete_variant": false,
+  "protocol_sha256": "48d9bfb04a5ad5fad00cb1d278e9aad325b3d9ada2a9b616dd04e6d2ce9df792",
+  "eligibility": [
+    {
+      "variant": "legacy_original",
+      "seed": 17,
+      "run": "runs/study_legacy_original_seed17_900s",
+      "completed_epochs": 11,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.5757476928540385,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "legacy_original",
+      "seed": 29,
+      "run": "runs/study_legacy_original_seed29_900s",
+      "completed_epochs": 11,
+      "training_status": "budget_stopped",
+      "eligible": false,
+      "validation_score_T1": 0.6868017872407384,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "legacy_original",
+      "seed": 43,
+      "run": "runs/study_legacy_original_seed43_900s",
+      "completed_epochs": 11,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.46002885750942657,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_global_legacy",
+      "seed": 17,
+      "run": "runs/study_compact_global_legacy_seed17_900s",
+      "completed_epochs": 100,
+      "training_status": "completed",
+      "eligible": false,
+      "validation_score_T1": 0.7840818695690092,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "compact_global_legacy",
+      "seed": 29,
+      "run": "runs/study_compact_global_legacy_seed29_900s",
+      "completed_epochs": 100,
+      "training_status": "completed",
+      "eligible": false,
+      "validation_score_T1": 0.8538318306043293,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "compact_global_legacy",
+      "seed": 43,
+      "run": "runs/study_compact_global_legacy_seed43_900s",
+      "completed_epochs": 99,
+      "training_status": "budget_stopped",
+      "eligible": false,
+      "validation_score_T1": 0.8014947276501481,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "legacy_balanced",
+      "seed": 17,
+      "run": "runs/study_legacy_balanced_seed17_900s",
+      "completed_epochs": 11,
+      "training_status": "budget_stopped",
+      "eligible": false,
+      "validation_score_T1": 0.21762262228664134,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "legacy_balanced",
+      "seed": 29,
+      "run": "runs/study_legacy_balanced_seed29_900s",
+      "completed_epochs": 11,
+      "training_status": "budget_stopped",
+      "eligible": false,
+      "validation_score_T1": 0.21527904698743616,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "legacy_balanced",
+      "seed": 43,
+      "run": "runs/study_legacy_balanced_seed43_900s",
+      "completed_epochs": 11,
+      "training_status": "budget_stopped",
+      "eligible": false,
+      "validation_score_T1": 0.21932590523453022,
+      "prior_non_degenerate": false
+    },
+    {
+      "variant": "compact_local_balanced",
+      "seed": 17,
+      "run": "runs/study_compact_local_balanced_seed17_900s",
+      "completed_epochs": 100,
+      "training_status": "completed",
+      "eligible": true,
+      "validation_score_T1": 0.15809032420142285,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_balanced",
+      "seed": 29,
+      "run": "runs/study_compact_local_balanced_seed29_900s",
+      "completed_epochs": 67,
+      "training_status": "completed",
+      "eligible": true,
+      "validation_score_T1": 0.17368779626592323,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_balanced",
+      "seed": 43,
+      "run": "runs/study_compact_local_balanced_seed43_900s",
+      "completed_epochs": 100,
+      "training_status": "completed",
+      "eligible": true,
+      "validation_score_T1": 0.1924137850277533,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_prior_matching",
+      "seed": 17,
+      "run": "runs/study_compact_local_prior_matching_seed17_900s",
+      "completed_epochs": 54,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.15836342876562992,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_prior_matching",
+      "seed": 29,
+      "run": "runs/study_compact_local_prior_matching_seed29_900s",
+      "completed_epochs": 54,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.1546884762883364,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_prior_matching",
+      "seed": 43,
+      "run": "runs/study_compact_local_prior_matching_seed43_900s",
+      "completed_epochs": 54,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.15549941582055762,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_hires_prior_matching",
+      "seed": 17,
+      "run": "runs/study_compact_local_hires_prior_matching_seed17_900s",
+      "completed_epochs": 31,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.15424320873362726,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_hires_prior_matching",
+      "seed": 29,
+      "run": "runs/study_compact_local_hires_prior_matching_seed29_900s",
+      "completed_epochs": 31,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.15149950985929211,
+      "prior_non_degenerate": true
+    },
+    {
+      "variant": "compact_local_hires_prior_matching",
+      "seed": 43,
+      "run": "runs/study_compact_local_hires_prior_matching_seed43_900s",
+      "completed_epochs": 31,
+      "training_status": "budget_stopped",
+      "eligible": true,
+      "validation_score_T1": 0.1443446315865327,
+      "prior_non_degenerate": true
+    }
+  ],
+  "candidate_runs": [
+    {
+      "variant": "legacy_original",
+      "seed": 17,
+      "run": "runs/study_legacy_original_seed17_900s"
+    },
+    {
+      "variant": "legacy_original",
+      "seed": 29,
+      "run": "runs/study_legacy_original_seed29_900s"
+    },
+    {
+      "variant": "legacy_original",
+      "seed": 43,
+      "run": "runs/study_legacy_original_seed43_900s"
+    },
+    {
+      "variant": "compact_global_legacy",
+      "seed": 17,
+      "run": "runs/study_compact_global_legacy_seed17_900s"
+    },
+    {
+      "variant": "compact_global_legacy",
+      "seed": 29,
+      "run": "runs/study_compact_global_legacy_seed29_900s"
+    },
+    {
+      "variant": "compact_global_legacy",
+      "seed": 43,
+      "run": "runs/study_compact_global_legacy_seed43_900s"
+    },
+    {
+      "variant": "legacy_balanced",
+      "seed": 17,
+      "run": "runs/study_legacy_balanced_seed17_900s"
+    },
+    {
+      "variant": "legacy_balanced",
+      "seed": 29,
+      "run": "runs/study_legacy_balanced_seed29_900s"
+    },
+    {
+      "variant": "legacy_balanced",
+      "seed": 43,
+      "run": "runs/study_legacy_balanced_seed43_900s"
+    },
+    {
+      "variant": "compact_local_balanced",
+      "seed": 17,
+      "run": "runs/study_compact_local_balanced_seed17_900s"
+    },
+    {
+      "variant": "compact_local_balanced",
+      "seed": 29,
+      "run": "runs/study_compact_local_balanced_seed29_900s"
+    },
+    {
+      "variant": "compact_local_balanced",
+      "seed": 43,
+      "run": "runs/study_compact_local_balanced_seed43_900s"
+    },
+    {
+      "variant": "compact_local_prior_matching",
+      "seed": 17,
+      "run": "runs/study_compact_local_prior_matching_seed17_900s"
+    },
+    {
+      "variant": "compact_local_prior_matching",
+      "seed": 29,
+      "run": "runs/study_compact_local_prior_matching_seed29_900s"
+    },
+    {
+      "variant": "compact_local_prior_matching",
+      "seed": 43,
+      "run": "runs/study_compact_local_prior_matching_seed43_900s"
+    },
+    {
+      "variant": "compact_local_hires_prior_matching",
+      "seed": 17,
+      "run": "runs/study_compact_local_hires_prior_matching_seed17_900s"
+    },
+    {
+      "variant": "compact_local_hires_prior_matching",
+      "seed": 29,
+      "run": "runs/study_compact_local_hires_prior_matching_seed29_900s"
+    },
+    {
+      "variant": "compact_local_hires_prior_matching",
+      "seed": 43,
+      "run": "runs/study_compact_local_hires_prior_matching_seed43_900s"
+    }
+  ],
+  "portable_candidate": {
+    "variant": "compact_local_hires_prior_matching",
+    "run": "runs/study_compact_local_hires_prior_matching_seed17_900s",
+    "three_seed_validation_score": 0.15002911672648403,
+    "training_seconds_limit": 900,
+    "latent_prior": "standard",
+    "selection_used_test": false
+  },
+  "deployment_recommendation": {
+    "run": "runs/study_confirmation_compact_local_hires_prior_matching_seed17_3600s",
+    "validation_score": 0.1507112761558785,
+    "checkpoint_sha256": "b1c8762b1ab34b1e139b6277a2dc1df766d8fc6219556178d4b1544ba38582d2",
+    "latent_prior": "standard",
+    "non_degenerate": true
+  },
+  "deployment_non_degeneracy_passed": true,
+  "deployment_candidates_seed17_only": [
+    {
+      "run": "runs/legacy_seed17_cuda_100epochs",
+      "validation_score": 0.5191815474523904,
+      "checkpoint_sha256": "708be2e071df85769b9d462862b0980869ef713ef743e4c95ae10abf52bdcc9d",
+      "latent_prior": "standard",
+      "non_degenerate": true
+    },
+    {
+      "run": "runs/legacy_seed17_cuda_100epochs",
+      "validation_score": 0.34518244438026724,
+      "checkpoint_sha256": "708be2e071df85769b9d462862b0980869ef713ef743e4c95ae10abf52bdcc9d",
+      "latent_prior": "aggregate",
+      "non_degenerate": false
+    },
+    {
+      "run": "runs/study_compact_local_hires_prior_matching_seed17_900s",
+      "validation_score": 0.15424320873362726,
+      "checkpoint_sha256": "2a93553eeab5297226dbf9581beb00dd76a8a85b4ee246d6b5281eea3840fbb5",
+      "latent_prior": "standard",
+      "non_degenerate": true
+    },
+    {
+      "run": "runs/study_confirmation_compact_local_hires_prior_matching_seed17_3600s",
+      "validation_score": 0.1507112761558785,
+      "checkpoint_sha256": "b1c8762b1ab34b1e139b6277a2dc1df766d8fc6219556178d4b1544ba38582d2",
+      "latent_prior": "standard",
+      "non_degenerate": true
+    }
+  ],
+  "deployment_interpretation": "Validation-based single-checkpoint recommendation; not multi-seed superiority"
+}

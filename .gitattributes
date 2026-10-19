@@ -1,0 +1,10 @@
+# Frozen source and protocol hashes include exact file bytes. Preserve them
+# across Windows/Linux checkouts instead of applying core.autocrlf.
+* -text whitespace=cr-at-eol
+*.npz binary
+*.pth binary
+*.png binary
+*.pdf binary
+# The historical reference is retained byte-for-byte, including old whitespace.
+src/ai_engine.py -whitespace
+provenance/executed/** -whitespace
