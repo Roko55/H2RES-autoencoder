@@ -1,5 +1,5 @@
 {
-  "scope": "Standalone research repository; excludes this manifest and generated local exports",
+  "scope": "Standalone research repository; excludes this manifest and ignored local outputs",
   "strict_temporal_holdout": false,
   "files": {
     ".gitattributes": {
@@ -14,6 +14,22 @@
       "bytes": 100,
       "sha256": "3a9cc754464ba5851667616fcd484758160f26604e62429d078b4552b95685e8"
     },
+    "AUDIT.md": {
+      "bytes": 8167,
+      "sha256": "f303f451a221076d0d9f0699a9e6bb3d843c702c7ec66b4280bee0962e0366a3"
+    },
+    "README.md": {
+      "bytes": 13951,
+      "sha256": "9b314ccad7a21da4f67ae1bca88e655e2b095954cc0f3f87061375c2ed2d3689"
+    },
+    "RESULTS.md": {
+      "bytes": 7243,
+      "sha256": "a72456fd0eec90e34f735348b4eb2a2bc1f8590dbe1e99849e4ce2a3a844160c"
+    },
+    "RIGHTS.md": {
+      "bytes": 373,
+      "sha256": "51096f0884f210678ea239ea71b411d9899d470c150fe8dfe1caefb648fb969c"
+    },
     "analysis/__init__.py": {
       "bytes": 74,
       "sha256": "bc59325717936cdcb12adfee2dcd139576cf357b041fba39c4cc0c577541afd5"
@@ -25,10 +41,6 @@
     "analysis/present_application_comparison.py": {
       "bytes": 3777,
       "sha256": "9e7d800785f1c3cb8b531632333eef3a3d335c6bed120834aa3b4216496f80cd"
-    },
-    "AUDIT.md": {
-      "bytes": 8167,
-      "sha256": "f303f451a221076d0d9f0699a9e6bb3d843c702c7ec66b4280bee0962e0366a3"
     },
     "audit.py": {
       "bytes": 5740,
@@ -182,10 +194,6 @@
       "bytes": 19480,
       "sha256": "c222d7ecd2778646acb09796d0b3e6fc970692545e427433ee001e0236d8424c"
     },
-    "README.md": {
-      "bytes": 12628,
-      "sha256": "3e5914668717b1e325131adfadc7c8a3b63ccdd658f2d3269049b2656e4cee0c"
-    },
     "requirements.txt": {
       "bytes": 136,
       "sha256": "6864da62c7c0702488f162daf759a68e20e2a94e9aa630870e1e7739a390ce92"
@@ -253,14 +261,6 @@
     "results/verification_summary.json": {
       "bytes": 788,
       "sha256": "54c0bddccef833a6dbc84f91437293e3373f174b0958a052a27eebc7b8d61fe8"
-    },
-    "RESULTS.md": {
-      "bytes": 7243,
-      "sha256": "a72456fd0eec90e34f735348b4eb2a2bc1f8590dbe1e99849e4ce2a3a844160c"
-    },
-    "RIGHTS.md": {
-      "bytes": 373,
-      "sha256": "51096f0884f210678ea239ea71b411d9899d470c150fe8dfe1caefb648fb969c"
     },
     "runs/hybrid_default_seed42_GPUfit_CPUpredict/prior_seed101.npz": {
       "bytes": 388568,

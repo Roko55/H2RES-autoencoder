@@ -6,6 +6,34 @@ This experiment generates hourly solar, wind and temperature profiles with a con
 
 **Evaluation scope:** the input dataset was calibrated upstream using IRENA years that overlap the reporting period. The results below are a retrospective comparison on a common pre-calibrated corpus, **not an independent temporal holdout**. The model's normalization, night mask and wind thresholds use training years only. See the [audit](AUDIT.md) and [machine-readable input provenance](data_provenance.json).
 
+## Quick start
+
+Use Python 3.11 and run from the repository root:
+
+```bash
+git clone https://github.com/Roko55/H2RES-autoencoder.git
+cd H2RES-autoencoder
+python -m venv .venv
+```
+
+Activate with `.\.venv\Scripts\Activate.ps1` on Windows PowerShell, or `source .venv/bin/activate` on Linux/macOS. Then:
+
+```bash
+python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python audit.py --verify-files
+python generate_profiles.py --run runs/study_confirmation_compact_local_hires_prior_matching_seed17_3600s --count 5 --seed 101 --output exports/quickstart_profiles.npy
+```
+
+No raw weather data or training is needed for generation from these delivered weights. The output is **relative to the selected run**, not the repository root:
+
+`runs/study_confirmation_compact_local_hires_prior_matching_seed17_3600s/exports/quickstart_profiles.npy`
+
+It has shape `[5, 8760, 3]`, channels `[solar, wind, temperature]`, and units capacity factor, capacity factor, degrees Celsius. The JSON sidecar records the seed, checkpoint/normalization hashes and output hash. Use a new filename on reruns. Optional `--temperature` is a latent sampling scale, not ambient temperature in degrees Celsius.
+
+The exporter samples one path at a time; evaluation's five-path batches can give a different exact seeded sequence. The delivered configuration has limited annual wind diversity, as quantified below. Checkpoint generation is not downstream planning validation.
+
 ## Comparison design
 
 | Table column / chart bar | Meaning | Number of annual profiles |
@@ -60,24 +88,9 @@ The main narrative fixes one autoencoder and one default pipeline. Other recorde
 
 The original fixed H2RES inputs are an additional historical baseline in the full tables; their temperature is a training-climatology proxy. Individual-path and ensemble-mean errors remain separate. This retrospective suitability check supports the stated application rationale; it is not a dated record proving which diagnostics caused the original development decision.
 
-## Run
+## Data-dependent evaluation
 
-Use a dedicated Python 3.11 environment and install the recorded dependencies:
-
-```bash
-cd H2RES-autoencoder
-python -m pip install -r requirements.txt
-python -m unittest discover -s tests -v
-python audit.py --verify-files
-```
-
-Generate directly from the delivered weights without the raw dataset:
-
-```bash
-python generate_profiles.py --run runs/study_confirmation_compact_local_hires_prior_matching_seed17_3600s --count 5 --seed 101 --output my_profiles.npy
-```
-
-The generator checks checkpoint and normalization hashes and rejects existing output files. It samples one path at a time; the study's five-path sampling batches can produce a different exact seeded sequence. Missing or changed weights never produce a zero-profile substitute.
+The generator checks checkpoint and normalization hashes and rejects existing output files. Missing or changed weights never produce a zero-profile substitute.
 
 To check training statistics and reevaluate the prior, supply the exact `HR_data.parquet` and write into a new ignored export directory:
 
@@ -124,3 +137,5 @@ The default resource guard reserves 2 GiB of free memory, uses one CPU thread an
 | `src/ai_engine.py` | Byte-preserved historical reference; its old fidelity claims are not validation evidence |
 
 No access helpers, credentials, solver licences, raw training wind pools, vendored environments or unrelated working scripts are included in this experiment. Native hybrid models belong to the pipeline and are not duplicated here. Original deliveries and measured model weights are unchanged. Rights for third-party inputs and code remain with their respective owners; this experiment does not assign them a new licence.
+
+This repository is a research experiment; the companion pipeline supplies the H2RES unit-mapping and thermal adapters. Another input corpus needs a separately trained, validated and frozen experiment. Clean Linux/Python 3.11 CI verifies checkpoint generation and synthetic tests. See [RIGHTS.md](RIGHTS.md) for reuse conditions.
