@@ -7,3 +7,4 @@ exports/
 data/*.parquet
 data/*.csv
 runs/local_*/
+corrected_study/data/

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "annual_channel_mean_and_SD_checks": 90,
+  "sampling_scale": 1,
+  "seeds": [
+    101,
+    102,
+    103
+  ],
+  "plotted_week": "first 168 hours, selected before plotting",
+  "selected_compact_checkpoint_sha256": "8df4288fe68496ced27c833468d6ee5ac9bd082b815a12a87d28bd2651441c1c"
+}

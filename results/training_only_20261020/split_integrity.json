@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checks": [
+    "Complete chronological years and disjoint 36/4/5 partitions",
+    "Changing reporting observations leaves training, validation, scaling, night mask and thresholds unchanged",
+    "Changing validation observations leaves training and normalization unchanged",
+    "Annual training windows cannot cross into validation",
+    "Selected AE is the eligible validation-only minimum",
+    "Both AE run records reference the corrected training-calibrated corpus",
+    "Available saved AE normalization matches recomputed training-only statistics",
+    "Any retrieved checkpoint hashes match the pre-reporting freeze",
+    "Hybrid model hashes and wind training pool match the frozen corrected run",
+    "National calibration targets end no later than 2015"
+  ],
+  "scope": "Data-flow and artifact checks, not a claim that every algorithmic issue is solved. Reporting years have previously been inspected.",
+  "data_sha256": "9a21558378d6359f308e3b7b7a3068d053195fa9123792c1d8aa9ac177101022",
+  "artifact_retrieval": {
+    "legacy_original_seed17_1800s_retry01": {
+      "normalization": true,
+      "weights": false
+    },
+    "compact_local_hires_prior_matching_seed17_1800s_retry01": {
+      "normalization": true,
+      "weights": true
+    }
+  }
+}

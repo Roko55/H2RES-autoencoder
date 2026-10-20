@@ -1,0 +1,113 @@
+{
+  "status": "budget_stopped",
+  "variant": "compact_local_hires_prior_matching",
+  "training_seed": 17,
+  "started_utc": "2026-10-19T22:27:01.920915+00:00",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.07077725783933979,
+      "validation_loss": 0.06125560961663723,
+      "normalized_reconstruction_MAE": {
+        "solar": 0.04973394796252251,
+        "wind": 0.10506998002529144,
+        "temperature": 0.054075635969638824
+      },
+      "posterior_KL_per_element": 0.6727502942085266,
+      "beta": 0.002,
+      "seconds": 485.266785099986,
+      "elapsed_seconds": 495.6837828999851
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.030032671239698817,
+      "validation_loss": 0.05409387405961752,
+      "normalized_reconstruction_MAE": {
+        "solar": 0.03804792836308479,
+        "wind": 0.09878301620483398,
+        "temperature": 0.05217567831277847
+      },
+      "posterior_KL_per_element": 0.6160324811935425,
+      "beta": 0.004,
+      "seconds": 502.2368426999892,
+      "elapsed_seconds": 997.9381401999854
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.028720203282791453,
+      "validation_loss": 0.050443110056221485,
+      "normalized_reconstruction_MAE": {
+        "solar": 0.03489411994814873,
+        "wind": 0.09800724685192108,
+        "temperature": 0.05142379179596901
+      },
+      "posterior_KL_per_element": 0.5349476933479309,
+      "beta": 0.006,
+      "seconds": 473.7569847999839,
+      "elapsed_seconds": 1471.7029031999991
+    }
+  ],
+  "test_evaluated": false,
+  "configuration": {
+    "operation": "train",
+    "variant": "compact_local_hires_prior_matching",
+    "seed": 17,
+    "seconds": 1800,
+    "epochs": 100,
+    "device": "cpu",
+    "output": "runs/compact_local_hires_prior_matching_seed17_1800s_retry01"
+  },
+  "implementation_sha256": {
+    "study_models.py": "e42de856bf00e189f84e3694f0c885580186050ddb81dab737e30fa35bc39313",
+    "study_data.py": "46265a1d4303eee1dda224da41d2639e3dbb4440d8cf0511bea9b3bc9cc59e4c",
+    "study_runner.py": "a2edcb37b2c1890c2ff04428a84e3ecf522940eed115097fdb706ca01a045cb3",
+    "study_runtime.py": "98d6592ac9eaee059bc6bd803f42d40e37755114662818c82b0e469d5a3bece0",
+    "overnight_protocol.json": "11fb1ca19eaa7b6040caea47f2e66344179d5788ebd3d5fb9d5b686fddb03019"
+  },
+  "parameters": 167343,
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_CPUs": 48,
+    "processor": "Intel64 Family 6 Model 85 Stepping 4, GenuineIntel",
+    "total_RAM_GiB": 766.7019996643066,
+    "reserved_free_RAM_GiB": 128.0
+  },
+  "latent_elements_per_annual_path": 8760,
+  "temporal_latent_step_hours": 2,
+  "torch": "2.8.0+cpu",
+  "numpy": "1.26.4",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+  "train_windows": 1826,
+  "batch_size": 8,
+  "learning_rate": 0.0003,
+  "data_materialization": "lazy overlapping views of one training series",
+  "data_sha256": "9a21558378d6359f308e3b7b7a3068d053195fa9123792c1d8aa9ac177101022",
+  "source_sha256": "1b20e3210a4431921e17ba03046e51761dc794e2e878829527123eecba5c5c48",
+  "loss": "new dimension-normalized balanced objective",
+  "cosine_schedule_horizon_epochs": 300,
+  "effective_epoch_limit": 100,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "max_beta": 0.02,
+    "beta_warmup_epochs": 10,
+    "gradient_norm_clip": 1.0
+  },
+  "prior_statistics_weight": 0.5,
+  "optimizer_steps": 843,
+  "completed_epochs": 3,
+  "initialization_seconds": 10.411707899998873,
+  "normalization_sha256": "a9235f69dcdfc1b4c695474fa021a0093c3fbb30e90d1672cd68ce452648cbe0",
+  "best_epoch": 3,
+  "elapsed_seconds": 1800.8057013999787,
+  "best_validation_loss": 0.050443110056221485,
+  "peak_working_set_MiB": 1088.7421875,
+  "stop_reason": "Predeclared wall-clock training budget reached",
+  "checkpoint": {
+    "file": "best_weights.pth",
+    "sha256": "8df4288fe68496ced27c833468d6ee5ac9bd082b815a12a87d28bd2651441c1c",
+    "bytes": 697459
+  },
+  "finished_utc": "2026-10-19T22:57:02.752219+00:00"
+}

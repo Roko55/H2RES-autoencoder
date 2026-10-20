@@ -1,0 +1,30 @@
+{
+  "pipeline_unit_tests": 28,
+  "calibration_regression_tests": 6,
+  "autoencoder_unit_tests": 10,
+  "split_mutation_checks": "passed",
+  "frozen_sample_channel_mean_SD_checks": 90,
+  "generation_smoke": {
+    "shape": [
+      2,
+      8760,
+      3
+    ],
+    "channel_order": [
+      "solar",
+      "wind",
+      "temperature"
+    ],
+    "seed": 101,
+    "temperature": 1.0,
+    "checkpoint_sha256": "8df4288fe68496ced27c833468d6ee5ac9bd082b815a12a87d28bd2651441c1c",
+    "latent_prior": "standard",
+    "normalization_sha256": "a9235f69dcdfc1b4c695474fa021a0093c3fbb30e90d1672cd68ce452648cbe0",
+    "generator_sha256": "b0896ed6fb7caefc03fe78463cfa0d3bc4bc9b639c2657f1adaca5f99229a69a",
+    "output_sha256": "c631d1caa85005a5221bab5eabd992e11bd730b512f1ef6dd71880d6dde6dcfa",
+    "units": "Unmodified source units, wind inverse log1p; no postprocessing or ensemble averaging"
+  },
+  "training_or_Gurobi_rerun": false,
+  "server_profile_downloads": "completed",
+  "sample_comparison": "individual prior paths; reporting years previously inspected"
+}

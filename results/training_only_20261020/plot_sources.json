@@ -1,0 +1,10 @@
+[
+  {
+    "source": "validation_rebuild_20261019\\final_results\\autoencoder_corrected\\runs\\compact_local_hires_prior_matching_seed17_1800s_retry01\\study_test\\metrics.csv",
+    "sha256": "d1b6fe112d1b3ef3cb25d781fd75dfb476768c1f83dcd3da402e260d17e84beb"
+  },
+  {
+    "source": "validation_rebuild_20261019\\final_results\\autoencoder_corrected\\study_20261019\\hybrid_comparator\\metrics.csv",
+    "sha256": "f80f4355864f5b85a8c3d12be8d1bf069cbe22a45315fb9bd9712f43e400de00"
+  }
+]
