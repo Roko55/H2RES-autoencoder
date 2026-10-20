@@ -11,8 +11,8 @@
       "sha256": "23c26d6c221b5bf1039455ed320488628efabf49f299f47d7ca868817ced9328"
     },
     ".gitignore": {
-      "bytes": 113,
-      "sha256": "c871f09963645dcbd2f5099524acad6c8cfa7bf1c774de4b19dd7e90cb10f754"
+      "bytes": 136,
+      "sha256": "3f0d393bbabb6c64f391ab7ab6c071005e0e74bff202209f1b5e16fef6e35b74"
     },
     "README.md": {
       "bytes": 3468,
@@ -79,8 +79,8 @@
       "sha256": "1b20e3210a4431921e17ba03046e51761dc794e2e878829527123eecba5c5c48"
     },
     "model/study_20261019/test_freeze.json": {
-      "bytes": 2398,
-      "sha256": "e9bd5edeeea4cc44c2c380cb1e121031179079f43e4fc53c87e2f6558e2ee724"
+      "bytes": 2888,
+      "sha256": "824a2a2bf695392ab07ec05b78ab96015662ff2539d3a30e31897c1aefb8a1c1"
     },
     "model/study_data.py": {
       "bytes": 4278,
@@ -125,6 +125,10 @@
     "results/wind_comparison/plot_sources.json": {
       "bytes": 493,
       "sha256": "24562937027f68385995c8e78498ccfb5f6d5a8133dcd3b0f3ae78ef7c316f29"
+    },
+    "results/wind_comparison/replay_verification.json": {
+      "bytes": 536,
+      "sha256": "d0390bfd4b974a8e6314d92054cb59215c64bfd5961f7f93b38c9aea5aaa3a68"
     },
     "results/wind_comparison/sample_verification.json": {
       "bytes": 316,

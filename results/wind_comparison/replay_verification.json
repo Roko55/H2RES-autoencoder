@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "compared_metric_rows": 135,
+  "maximum_absolute_difference_selected_metrics": 1.6564784381500886e-05,
+  "comparison_tolerance": {
+    "relative": 1e-05,
+    "absolute": 1e-05
+  },
+  "bitwise_identity_claimed": false,
+  "frozen_path_score": 0.2012598819703064,
+  "replayed_path_score": 0.20125989632166877,
+  "checkpoint_sha256": "8df4288fe68496ced27c833468d6ee5ac9bd082b815a12a87d28bd2651441c1c",
+  "scope": "Same frozen model on the same corrected corpus; no refitting or model reselection."
+}

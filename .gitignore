@@ -8,3 +8,4 @@ data/*.parquet
 data/*.csv
 runs/local_*/
 model/data/
+model/runs/*/study_*/
