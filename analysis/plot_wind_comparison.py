@@ -34,7 +34,7 @@ def main():
     axes[1].set_ylabel('Standard deviation of annual means')
     axes[1].set_title('Variation between annual wind yields')
     axes[1].set_ylim(0,.0097)
-    fig.text(.5,.02,'Corrected training-calibrated corpus. Historical: 5 years; each generator: 15 individual paths.\nSame sampling scale (1), seeds 101-103; compact checkpoint selected on validation only.',ha='center',fontsize=9)
+    fig.text(.5,.02,'Training-calibrated corpus. Historical: 5 years; each generator: 15 individual paths.\nAutoencoder prior scale 1; seeds 101-103 for generation and frozen-pipeline member selection.',ha='center',fontsize=9)
     fig.tight_layout(rect=(0,.11,1,1))
     fig.savefig(ROOT/'figures/annual_wind_comparison.png',dpi=220,facecolor='white')
     plt.close(fig)

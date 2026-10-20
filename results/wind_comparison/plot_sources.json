@@ -1,10 +1,22 @@
 [
   {
-    "source": "validation_rebuild_20261019\\final_results\\autoencoder_corrected\\runs\\compact_local_hires_prior_matching_seed17_1800s_retry01\\study_test\\metrics.csv",
-    "sha256": "d1b6fe112d1b3ef3cb25d781fd75dfb476768c1f83dcd3da402e260d17e84beb"
+    "source": "results/wind_comparison/selected_autoencoder_metrics.csv",
+    "sha256": "d1b6fe112d1b3ef3cb25d781fd75dfb476768c1f83dcd3da402e260d17e84beb",
+    "scope": "Wind rows of the validation-selected autoencoder evaluation"
   },
   {
-    "source": "validation_rebuild_20261019\\final_results\\autoencoder_corrected\\study_20261019\\hybrid_comparator\\metrics.csv",
-    "sha256": "f80f4355864f5b85a8c3d12be8d1bf069cbe22a45315fb9bd9712f43e400de00"
+    "source": "results/wind_comparison/hybrid_metrics.csv",
+    "sha256": "09c4d506b990101e2e3ef2014421405a387f94b95f0ad42f8b8f0a2a05c8da8b",
+    "scope": "Wind-only rows; sampled wind values unchanged in the current ensemble"
+  },
+  {
+    "source": "results/wind_comparison/annual_wind_paths.csv",
+    "sha256": "16610bee2a6f44c85c8d739eb5fd91855d21119264836a33c21eaea9ce0fe6af",
+    "scope": "Exact numeric values used in the annual-wind figure"
+  },
+  {
+    "source": "results/wind_comparison/wind_week.csv",
+    "sha256": "6ede36d733d522c8af8743206030b03fc5bbcf0b0ceffbf19012b656d1a4c0b2",
+    "scope": "Exact numeric values used in the hourly-wind figure"
   }
 ]

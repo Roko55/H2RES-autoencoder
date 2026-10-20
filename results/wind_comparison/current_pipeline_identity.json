@@ -1,0 +1,10 @@
+{
+  "scope": "Wind-only comparison against the retained validation-selected autoencoder",
+  "current_ensemble_sha256": "1737c4704e3fa412f521d9e9059362be183d70e2539d891d5f5969de0f6f3aae",
+  "archived_comparison_ensemble_sha256": "0196ff09652440a1a5365a7d962f457dfab44839b2d3bc97c4dd83394b3b5fb9",
+  "wind_arrays_bitwise_identical": true,
+  "wind_sampling_changed": false,
+  "solar_and_temperature_comparison": "Current metrics are under results/profile_validation",
+  "pipeline_regression_tests": 38,
+  "native_100_member_replay": "passed"
+}

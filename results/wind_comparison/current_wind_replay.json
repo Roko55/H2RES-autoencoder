@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "pipeline_profiles_verified": 15,
+  "numeric_checks": 46,
+  "illustrative_week_verified": true,
+  "ensemble_sha256": "1737c4704e3fa412f521d9e9059362be183d70e2539d891d5f5969de0f6f3aae",
+  "sampling": "Autoencoder inference versus explicit frozen pipeline member selections; not ensemble-mean curves",
+  "autoencoder_checkpoint_changed": false,
+  "ramp_arithmetic": "Stored float32 hourly differences; float64 quantile interpolation, matching the evaluation CSV"
+}

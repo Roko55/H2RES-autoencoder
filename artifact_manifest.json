@@ -15,24 +15,24 @@
       "sha256": "3f0d393bbabb6c64f391ab7ab6c071005e0e74bff202209f1b5e16fef6e35b74"
     },
     "README.md": {
-      "bytes": 3468,
-      "sha256": "b48cb560f60491dbee81e3c5ddc33bcef41d6e42dfb9b25a807ae150bff26663"
+      "bytes": 3573,
+      "sha256": "5b3ad1494fe6e31b1baa1fdd8d2abc462584f0706f0f7c13eaaa74c23b3d6aa4"
     },
     "RIGHTS.md": {
       "bytes": 373,
       "sha256": "51096f0884f210678ea239ea71b411d9899d470c150fe8dfe1caefb648fb969c"
     },
     "analysis/plot_wind_comparison.py": {
-      "bytes": 3100,
-      "sha256": "810686b44ada2832e22279d57468d0cf7a4625989838269cd943fdd7ac886f03"
+      "bytes": 3096,
+      "sha256": "6656443e6578051e87576eb870415e86ffda339fa0d304aca949338481778829"
     },
     "audit.py": {
       "bytes": 2830,
       "sha256": "90ac9435bf2f732ca1d3f35647035aaa545d6a492e117b2f317a3bd6ef280129"
     },
     "figures/annual_wind_comparison.png": {
-      "bytes": 152849,
-      "sha256": "14af4fccd76da9933719c0acf2888574bc237b324748e8bf65e28bd030becdb7"
+      "bytes": 149293,
+      "sha256": "896c5ad096f02bd65ed4dcb0758e9c8045bf58fbf99fea27644ca61df0779a87"
     },
     "figures/wind_week.png": {
       "bytes": 235654,
@@ -119,12 +119,12 @@
       "sha256": "424484239c9b6e941f8cd178269de7f3b62c2e83932abbcf7357eaab3f4740fe"
     },
     "results/wind_comparison/hybrid_metrics.csv": {
-      "bytes": 52069,
-      "sha256": "f80f4355864f5b85a8c3d12be8d1bf069cbe22a45315fb9bd9712f43e400de00"
+      "bytes": 20915,
+      "sha256": "09c4d506b990101e2e3ef2014421405a387f94b95f0ad42f8b8f0a2a05c8da8b"
     },
     "results/wind_comparison/plot_sources.json": {
-      "bytes": 493,
-      "sha256": "24562937027f68385995c8e78498ccfb5f6d5a8133dcd3b0f3ae78ef7c316f29"
+      "bytes": 935,
+      "sha256": "834bb66208898d778261545b665e3ef5667ed92b936fd9e331574c92c3a38fc9"
     },
     "results/wind_comparison/replay_verification.json": {
       "bytes": 536,
@@ -157,6 +157,14 @@
     "results/wind_comparison/wind_week.csv": {
       "bytes": 21718,
       "sha256": "6ede36d733d522c8af8743206030b03fc5bbcf0b0ceffbf19012b656d1a4c0b2"
+    },
+    "results/wind_comparison/current_pipeline_identity.json": {
+      "bytes": 551,
+      "sha256": "d895a096c69c7499434eb02534a9e70ada8ecd98daaec950ac4006266100eb18"
+    },
+    "results/wind_comparison/current_wind_replay.json": {
+      "bytes": 499,
+      "sha256": "e1ac44b86b3cb85e05e5dc602f4069bf79c0bd06adc04a1c8497ce46cf543e86"
     }
   }
 }

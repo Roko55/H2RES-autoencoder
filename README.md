@@ -39,8 +39,10 @@ reference and the pipeline sample.
 
 ![Annual wind diversity](figures/annual_wind_comparison.png)
 
-Historical data contain five years; each generator supplies 15 paths using
-fixed seeds 101-103. Dots are individual annual means, not ensemble means.
+Historical data contain five years. Autoencoder inference generates 15 paths
+with prior scale 1 and seeds 101-103; the pipeline comparison selects 15
+members from its frozen ensemble with these seeds. Dots are individual
+annual means, not ensemble means.
 These descriptive comparisons do not estimate rare-event probabilities.
 
 ![Individual wind paths](figures/wind_week.png)
