@@ -1,6 +1,0 @@
-{
-  "exit_code": 0,
-  "command_seconds": 3.7700754,
-  "profiles": 2,
-  "scope": "Whole CPU command including imports, loading and file write; not a steady-state benchmark"
-}

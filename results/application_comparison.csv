@@ -1,5 +1,0 @@
-metric,unit,observed_reporting,selected_CVAE,current_default_GPUfit_CPUpredict_seed42
-Annual wind-mean SD,capacity factor,0.010212584547565507,0.0014257826407761804,0.007636885734872186
-Annual renewable-yield index SD,solar CF + wind CF,0.010970756139571795,0.0017349914082825449,0.0076946424062628895
-Mean low-wind episode duration,hours,3.183049960319099,5.549364455236076,4.635884367328306
-Mean high-wind episode duration,hours,2.1921088813931875,4.385312981917929,3.6768862106453066

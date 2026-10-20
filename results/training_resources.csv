@@ -1,9 +1,0 @@
-run,host,training_device,status,fit_only_seconds,calibration_seconds,preparation_including_imports_seconds,whole_trial_including_sampling_seconds,peak_process_RAM_MiB,completed_epochs,best_epoch,CPU_threads,GPU_peak_VRAM_MiB
-study_confirmation_compact_local_hires_prior_matching_seed17_3600s,faculty workstation,GPU Quadro P2000,budget_stopped,3600.0670992999803,0.0,3600.0670992999803,3600.0670992999803,1476.54296875,127.0,109.0,1,not measured comparably
-study_laptop_compact_local_balanced_seed17_900s,consumer laptop,CPU 1 thread,budget_stopped,900.2030000000086,0.0,900.2030000000086,900.2030000000086,563.4296875,11.0,9.0,1,not measured comparably
-legacy_seed17_cuda_100epochs,faculty workstation,GPU Quadro P2000,completed,7587.98638789996,0.0,7587.98638789996,7587.98638789996,3926.140625,100.0,,1,not measured comparably
-selected_ae_faculty_cpu900_seed17,faculty workstation,CPU 1 thread,budget_stopped,901.596447500051,0.0,901.596447500051,901.596447500051,1083.08984375,2.0,2.0,1,not measured comparably
-hybrid_default_seed42_GPUfit_CPUpredict,faculty workstation,GPU Quadro P2000,completed,96.24792880000314,23.178076500014868,130.81997650006087,187.38659369997913,1012.48046875,,,1,not measured comparably
-hybrid_seed17_faculty_cpu,faculty workstation,CPU 1 thread,completed,668.615502599976,22.314099600014742,696.9478534000227,750.2250782999909,757.03515625,,,1,not measured comparably
-hybrid_seed29_faculty_cpu,faculty workstation,CPU 1 thread,completed,699.5964714999427,23.500813200022094,726.2130368999206,781.9893434999976,757.72265625,,,1,not measured comparably
-hybrid_seed43_faculty_cpu,faculty workstation,CPU 1 thread,completed,700.4474772000103,22.914392600010615,726.5005944999866,781.0801197999972,757.3359375,,,1,not measured comparably
