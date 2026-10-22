@@ -1,4 +1,4 @@
-"""Explicit new CVAE alternatives; the historical source is never overwritten."""
+"""Conditional variational autoencoders and annual-profile loss functions."""
 import importlib.util
 from pathlib import Path
 
@@ -18,7 +18,7 @@ def legacy_module(device="cpu"):
 
 
 class GlobalCompact(nn.Module):
-    """The previously prepared 691639-parameter adaptation, same weekly data now."""
+    """Global-latent annual CVAE with 691,639 trainable parameters."""
     latent_dim = 32
 
     def __init__(self, night_mask=None):
@@ -139,7 +139,6 @@ def balanced_loss(pred, target, mu, lv, beta):
 
     KL and sampling use the same bounded log variance. Loss terms are averaged
     per channel and sequence instead of scaling with annual FFT magnitude.
-    This is a new objective, not a claim to preserve the historical objective.
     """
     mse = (pred - target).square().mean()
     gradient = ((pred[..., 1:] - pred[..., :-1]) - (target[..., 1:] - target[..., :-1])).abs().mean()
@@ -161,8 +160,7 @@ def prior_statistics_loss(generated, target):
     """Unpaired training-prior constraints; no hourly alignment of random weather.
 
     Match annual marginal distributions, spectral magnitude, persistence and
-    channel dependence using training targets only. This extra objective is
-    explicitly a separate variant; reconstruction alone is not its proxy.
+    channel dependence using training targets only.
     """
     moments = (generated.mean(-1) - target.mean(-1)).square().mean()
     moments = moments + (generated.std(-1) - target.std(-1)).square().mean()

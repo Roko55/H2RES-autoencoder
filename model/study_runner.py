@@ -88,8 +88,7 @@ def train(args):
         batch = 4 if original_loss or args.variant == "legacy_balanced" else 8
         lr = 3e-5 if original_loss else (1e-4 if args.variant == "legacy_balanced" else 3e-4)
         optimizer = torch.optim.Adam(model.parameters(), lr=lr, weight_decay=2e-3 if original_loss else 1e-4)
-        # Historical schedule horizon stays 100 even when an external wall budget stops it early.
-        # A fixed horizon keeps paired short/long balanced runs on the same LR prefix.
+        # Keep the learning-rate schedule independent of the wall-time limit.
         schedule_epochs = 100 if original_loss else 300
         effective_epochs = min(args.epochs, 100) if original_loss else args.epochs
         scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=schedule_epochs, eta_min=1e-6)
@@ -145,14 +144,14 @@ def train(args):
                 report["optimizer_steps"] += 1
             guard.check()
             model.eval()
-            # Fixed validation noise for new objectives. Legacy stochastic validation is preserved.
+            # Reuse validation noise for the dimension-normalized objective.
             context = nullcontext() if original_loss else torch.random.fork_rng(devices=[0] if args.device == "cuda" else [])
             with torch.no_grad(), context:
                 if not original_loss:
                     torch.manual_seed(1000)
                 x, c = va.to(args.device), vc.to(args.device)
                 pred, _, mu, lv = model(x, c)
-                # Original checkpoint selection uses epoch beta; the balanced objective uses a fixed beta.
+                # Reconstruction uses the scheduled beta; balanced loss uses beta 0.02.
                 vloss = float(loss_fn(pred, x, mu, lv, beta=beta if original_loss else .02)[0])
                 if match_prior:
                     vloss += .5 * float(prior_statistics_loss(model.sample(c), x))
